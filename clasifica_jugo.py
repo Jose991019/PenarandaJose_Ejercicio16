@@ -61,6 +61,6 @@ plt.savefig('F1_training_test.png')
 
 plt.figure(figsize = (6,6))
 for i in range(np.shape(features)[1]):
-    plt.plot(x,np.array(features)[:,i], label = 'Feature {}'.format(i))
+    plt.plot(x,np.array(features)[:,i], label = 'Feature {}'.format(i+1))
     plt.legend()
 plt.savefig('features.png')
