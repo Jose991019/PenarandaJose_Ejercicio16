@@ -63,4 +63,6 @@ plt.figure(figsize = (6,6))
 for i in range(np.shape(features)[1]):
     plt.plot(x,np.array(features)[:,i], label = 'Feature {}'.format(i+1))
     plt.legend()
+plt.xlabel('max depth')
+plt.ylabel('Average feature importance')
 plt.savefig('features.png')
